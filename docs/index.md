@@ -1,14 +1,9 @@
-# Documentación del Proyecto
+# Portafolio de Proyecto de Ingeniería IV
 
-Bienvenido 👋  
-Esta es una **plantilla** basada en [MkDocs](https://www.mkdocs.org/) + [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) para cursos y proyectos.
+Aquí documentaré todos los entregables, códigos y diseños del semestre.
 
----
+## Semana 1
 
-## Empezar rápido (3 pasos)
+A continuación se presenta el plan de estudios y lineamientos de la materia:
 
-1. **Edita el nombre del sitio** en `mkdocs.yml`:
-   ```yaml
-   site_name: Documentación del Curso
-   theme:
-     name: material
+[Descargar Syllabus de la materia](archivos/2026_Syllabus_Proyecto_Ingeniería_IV_MDSA.pdf)
