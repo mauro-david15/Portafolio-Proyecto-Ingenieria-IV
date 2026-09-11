@@ -1,40 +1,31 @@
-site_name: Plantilla para Documentación
-markdown_extensions:
-  - pymdownx.highlight:
-      anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.superfences
-  - pymdownx.critic:
-      mode: view
-  - pymdownx.caret
-  - pymdownx.keys
-  - def_list
-  - attr_list
-  - md_in_html
-  - pymdownx.blocks.caption
-  - admonition
-  - pymdownx.details
-  - pymdownx.emoji
-  - pymdownx.tabbed:
-      alternate_style: true
-  - pymdownx.tasklist:
-      custom_checkbox: true
-      clickable_checkbox: true
-# Use the ReadTheDocs theme
+site_name: Portafolio de Proyecto de Ingeniería IV
+site_author: Mauro David Sánchez
+
 theme:
   name: material
-  highlightjs: true 
-  palette:
-      - scheme: default
-        primary: red
-
   features:
-    - content.code.copy
-    - content.tooltips
-extra_css:
-  - https://use.fontawesome.com/releases/v6.5.2/css/all.css
-  - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css
-
+    - navigation.tabs # Crea un menú superior elegante
+    - navigation.top # Agrega un botón para volver rápidamente arriba
+    - header.autohide # Oculta la barra al bajar para no estorbar la lectura
+  palette:
+    # Configuración del modo claro
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Cambiar a modo oscuro
+    # Configuración del modo oscuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: Cambiar a modo claro
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    logo: material/robot-industrial # Un detalle temático para la barra superior
