@@ -1,12 +1,16 @@
 site_name: Portafolio de Proyecto de Ingeniería IV
-site_author: Mauro David Sánchez
+site_author: Mauro David Sánchez Arenas
 
 theme:
   name: material
+  language: es
   features:
     - navigation.tabs # Crea un menú superior elegante
+    - navigation.sections # Agrupa las semanas en la barra lateral
     - navigation.top # Agrega un botón para volver rápidamente arriba
+    - navigation.footer # Botones de "anterior / siguiente" al final de cada página
     - header.autohide # Oculta la barra al bajar para no estorbar la lectura
+    - content.tabs.link
   palette:
     # Configuración del modo claro
     - media: "(prefers-color-scheme: light)"
@@ -29,3 +33,36 @@ theme:
     code: Roboto Mono
   icon:
     logo: material/robot-industrial # Un detalle temático para la barra superior
+
+markdown_extensions:
+  - admonition
+  - tables
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+nav:
+  - Inicio: index.md
+  - Semanas:
+      - "Semana 1 · Introducción y SCAMPER": semanas/semana1.md
+      - "Semana 2 · Búsqueda de oportunidades": semanas/semana2.md
+      - "Semana 3 · Propiedad intelectual y marca": semanas/semana3.md
+      - "Semana 4 · Mercado y propuesta de valor": semanas/semana4.md
+      - "Semana 5 · PDS y arquitectura": semanas/semana5.md
+      - "Semana 6 · Concepto de diseño": semanas/semana6.md
+      - "Semana 7 · Viabilidad técnica y económica": semanas/semana7.md
+  - Proyecto final: proyecto-final.md
+  - Recursos:
+      - Encabezados: comandos.md
+      - Comandos de Git: gitcmds.md
+      - Plantilla de documentación: ejemplo.md
